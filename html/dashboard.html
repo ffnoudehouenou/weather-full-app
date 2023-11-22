@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Météo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+    <!-- Barre de navigation -->
+    <nav class="border-b border-slate-300 p-4 text-white">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-semibold">Dashboard Météo</h1>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mx-auto mt-8">
+
+        <!-- Nom d'utilisateur -->
+        <div class="text-right mb-4">
+            <span class="text-sm">Connecté en tant que: <strong>Username</strong></span>
+        </div>
+
+        <!-- Ville input -->
+        <label for="city" class="block text-sm mb-2">Ville:</label>
+        <input type="text" id="city" class="w-full px-4 py-2 border border-slate-300 rounded-md mb-4 bg-black" value="{city}" onChange="{handleCityChange}" />
+
+        <!-- Widgets météo -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Widget 1 -->
+            <div class="bg-black p-6 rounded-md border border-slate-300">
+                <h2 class="text-lg font-semibold mb-4">Ville 1</h2>
+                <!-- Contenu du widget météo ici -->
+                <p>Température: 20°C</p>
+                <p>Conditions: Ensoleillé</p>
+            </div>
+
+            <!-- Widget 2 -->
+            <div class="bg-black p-6 rounded-md shadow-md border border-slate-300">
+                <h2 class="text-lg font-semibold mb-4">Ville 2</h2>
+                <!-- Contenu du widget météo ici -->
+                <p>Température: 22°C</p>
+                <p>Conditions: Nuageux</p>
+            </div>
+
+            <!-- Widget 3 -->
+            <div class="bg-black p-6 rounded-md shadow-md border border-slate-300">
+                <h2 class="text-lg font-semibold mb-4">Ville 3</h2>
+                <!-- Contenu du widget météo ici -->
+                <p>Température: 18°C</p>
+                <p>Conditions: Pluvieux</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
